@@ -1,0 +1,422 @@
+*{
+  padding: 0%;
+  margin: 0%;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body{
+  font-family: Helvetica;
+}
+
+#about{
+  width: 100%;
+  height: 90vh;
+}
+
+.grid{
+  padding-top: 66px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-around;
+}
+h1{
+  font-size: 50px;
+  margin-top: 150px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+}
+.homeskills{
+  font-size: 30px;
+  margin-top: 10px;
+  color: #fff;
+  text-align: center;
+}
+.icon i{
+  margin-top: 10px;
+  font-size: 27px;
+  color: white;
+  margin-right: 20px;
+}
+.icon{
+  text-align: center;
+  cursor: pointer;
+}
+.homepic img{
+  width: 300px;
+  border-radius: 50%;
+  position: relative;
+  top: 100px;
+  z-index: 2;
+}
+.homepic img:hover{
+  cursor: pointer;
+  box-shadow: 0 0 100px #badefc;
+  transition: .5s;
+  filter: contrast(1.5);
+}
+nav{
+  width: 100%;
+  position: fixed;
+  z-index: 4;
+}
+nav img{
+  margin-top: 20px;
+  margin-left: 50px;
+  width: 100px;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #fff;
+  font-size: 17px;
+  padding: 7px 13px;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+a:hover{
+  background: #e0dfbc;
+  transition: .5s;
+  color: black;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+.back-video{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.columns{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-left: 20px;
+}
+#educ-area{
+  background-color: #1c2a47;
+  height: 80vh;
+}
+
+#educ-area h1{
+  margin: 60px;
+  font-size: 30px;
+  padding-top: 80px;
+}
+
+.box{
+  height: 200px;
+  width: 500px;
+  background-color: rgb(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.box h2{
+  color: rgb(129, 169, 48);
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+.box p{
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+#exp-area{
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  background-color: #10306d;
+}
+#exp-area h1{
+  margin: 60px;
+  font-size: 30px;
+  padding-top: 5px;
+}
+.row{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.boxx{
+  flex-direction: column;
+  width: 330px;
+  height: 380px;
+  border: 1px solid black;
+  margin: 10px;
+  align-items: center;
+  text-align: justify;
+  padding: 10px;
+  border-radius: 15px;
+  background: linear-gradient(to top, #141b2c 50%, #fff 50%);
+  background-size: 100% 200%;
+  transform: all .8s;
+}
+.boxx:hover{
+  cursor: pointer;
+  background-position: left bottom;
+  color: #fff;
+  border: none;
+  box-shadow: 0 0 20px rgb(20,27,44);
+}
+.boxx img{
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+} 
+
+.boxx h2{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: 1px;
+  text-align: center;
+  padding-top: 30px;
+}
+.boxx p{
+  line-height: 20px;
+  font-size: 17px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.con{
+  height: 120vh;
+  width: 100%;
+  background-color:#05070b;
+
+}
+#skills-area{
+  background-color: #110905;
+  border: 1px solid black;
+  width: 40%;
+  min-width: 500px;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  right: 50%;
+  margin-top: 400px;
+}
+.containerr{
+  width: 100%;
+  padding: 50px 30px;
+  background-color: rgba(255,255,255,0.6);
+  border-radius: 10px;
+  box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+  backdrop-filter: blur(10px);
+}
+.shape-1{
+  height: 220px;
+  width: 220px;
+  background: linear-gradient(
+    #ee146f,
+    #f878ae
+  );
+  border-radius: 50%;
+  position: absolute;
+  bottom: -100px;
+  left: -80px;
+  z-index: -1;
+}
+.shape-2{
+  height: 180px;
+  width: 180px;
+  background: linear-gradient(
+    #51b1e9,
+    #325ea5
+  );
+  border-radius: 50%;
+  position: absolute;
+  top: -100px;
+  right: -50px;
+  z-index: -1;
+}
+.containerr *{
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  font-weight: 500;
+}
+.ms{
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+}
+.skills:not(:last-child){
+  margin-bottom: 30px;
+}
+.details{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.bar{
+  margin-top: 15px;
+  position: relative;
+  background-color: rgba(255,255,255,0.6);
+  padding: 7px 10px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+.bar div{
+  position: relative;
+  width: 0;
+  height: 5px;
+  border-radius: 10px;
+  background-color: #badefc;
+  border: 1px solid #03070a;
+  box-shadow: 0 0 5px rgba(2, 8, 14, 0.6);
+}
+#html-bar{
+  animation: html-fill 2s forwards;
+}
+@keyframes html-fill{
+  100%{
+    width: 90%;
+  }
+}
+#css-bar{
+  animation: css-fill 2s forwards;
+}
+@keyframes css-fill{
+  100%{
+    width: 75%;
+  }
+}
+#cs-bar{
+  animation: cs-fill 2s forwards;
+}
+@keyframes cs-fill{
+  100%{
+    width: 90%;
+  }
+}
+#le-bar{
+  animation: le-fill 2s forwards;
+}
+@keyframes le-fill{
+  100%{
+    width: 80%;
+  }
+}
+
+
+@media (min-aspect-ratio: 16/9){
+  .back-video{
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9){
+  .back-video{
+    width: auto;
+    height: 100%;
+  }
+}
+
+@media (max-width: 952px){
+  .homepic img{
+    z-index: 1;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+  .grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+  }
+  .columns{
+    flex-direction: column;
+  }
+  #educ-area{
+    height: 150vh;
+  }
+  .box{
+    margin-bottom: 20px;
+  }
+  .con{
+    height: 140vh;
+  }
+  .box{
+    margin-left: 50px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  .homepic img{
+    width: 180px;
+  }
+  .hometxt h1{
+    font-size: 25px;
+  }
+  .homeskills{
+    font-size: 15px;
+  }
+  .icon i{
+    font-size: 15px;
+  }
+  #about{
+    height: 80vh;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 80px;
+    left: -100%;
+    transition: all .5s;
+    text-align: center;
+  }
+  nav ul li {
+    display: inline-block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover{
+    background: none;
+    color: black;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+  .columns{
+    flex-direction: column;
+  }
+  #educ-area{
+    height: 150vh;
+  }
+  .con{
+    height: 140vh;
+  }
+  .box{
+    margin-left: 50px;
+  }
+}
